@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select name="" id="gender">
+        <option value="" selected disabled>Select gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+
+    <select name="" id="marita_status">
+        <option value="">Select Marital Status</option>
+        <option value="Married">Married</option>
+        <option value="Unmarried">Unmarried</option>
+    </select>
+
+    <input type="number" placeholder="Enter Age" id="age">
+    <button onclick="myFunction()">Check</button>
+    <script>
+        function myFunction(){
+            var gender = document.getElementById('gender').value;
+            var marita_status = document.getElementById('marita_status').value;
+            var age = document.getElementById('age').value;
+            if(marita_status=='Married'){
+                alert('You are insured')
+            }
+            else if(age>30 && marita_status=='Unmarried' && gender=='Male'){
+                alert('You are insured')
+            }
+            else if(age>25 && marita_status=='Unmarried' && gender=='Female'){
+                alert('You are insured')
+            }
+            else{
+                alert('You are not insure');
+            }
+        }
+    </script>
+</body>
+</html>

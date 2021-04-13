@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" placeholder="Ali, age" id="ali">
+    <input type="text" placeholder="Sarah, age" id="sarah">
+    <input type="text" placeholder="Ahmed, age" id="ahmed">
+    <button onclick="myFunction()">Check</button>
+
+    <script>
+
+        function myFunction(){
+
+            var  ali_age = document.getElementById('ali').value;  
+            var  sarah_age = document.getElementById('sarah').value;  
+            var  ahmed_age = document.getElementById('ahmed').value; 
+            
+            if( ali_age < sarah_age && ali_age < ahmed_age){
+                alert('Ali is youngest')
+            }
+            else if( sarah_age < ali_age && sarah_age < ahmed_age){
+                alert('Sarah is Youngest')
+            }
+            else{
+                alert('Ahmed is youngest')
+            }
+            
+        }
+    </script>
+</body>
+</html>

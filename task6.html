@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="enter any number" id="no">
+    <button onclick="myFunction()">Check</button>
+    <script>
+        function myFunction(){
+            var no = document.getElementById('no').value;
+            if ( no % 2 == 1){
+                alert("This number is Odd ")
+            }
+            else {
+                alert("This number is Even")
+            }
+
+            //another method using ternary opertor
+            
+            // var result = ( no % 2 == 0)?"even":"odd";
+            // alert(result)
+        }
+        
+    </script>
+</body>
+</html>

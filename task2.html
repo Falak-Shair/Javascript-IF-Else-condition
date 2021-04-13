@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Current Year" id="current_year">
+    <input type="text" placeholder="joining Year" id="joining_year">
+    <button onclick="myFunction()">Check</button>
+    <script>
+        function myFunction(){
+            var current_year = document.getElementById('current_year').value;
+            var joining_year = document.getElementById('joining_year').value;
+            var service = current_year - joining_year ;
+            if( service > 3){
+                alert('Congratulation Yor Earned a Bonus of 2500');
+            }
+        }
+
+    </script>
+</body>
+</html>

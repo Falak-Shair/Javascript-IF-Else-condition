@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="gender" id="gender">
+    <input type="text" placeholder="year of service" id="year of service">
+    <input type="text" placeholder="qualification" id="qualification">
+    <button onclick="myFunction()">CHECK</button>
+<script>
+function myFunction(){
+    var gender = document.getElementById('gender').value;
+    var service = document.getElementById('year of service').value;
+    var qualification = document.getElementById('qualification').value;
+    
+    var year_of_service = 2020 - service ;
+
+    if( gender== 'male' &&  year_of_service >= 10 && qualification == 'post graduate'){
+        alert('Your salary is 15000')
+    }
+    else if( gender== 'male' &&  year_of_service >= 10 && qualification == 'graduate'){
+        alert('Your salary is 10000')
+    }
+    else if( gender== 'male' &&  year_of_service < 10 && qualification == 'post graduate'){
+        alert('Your salary is 10000')
+    }
+    else if( gender== 'male' &&  year_of_service < 10 && qualification == 'graduate'){
+        alert('Your salary is 7000')
+    }
+    else if( gender== 'female' &&  year_of_service >= 10 && qualification == 'post graduate'){
+        alert('Your salary is 12000')
+    }
+    else if( gender== 'female' &&  year_of_service >= 10 && qualification == 'graduate'){
+        alert('Your salary is 9000')
+    }
+    else if( gender== 'female' &&  year_of_service < 10 && qualification == 'post graduate'){
+        alert('Your salary is 10000')
+    }
+    else if( gender== 'female' &&  year_of_service < 10 && qualification == 'graduate'){
+        alert('Your salary is 6000')
+    }
+    else{
+        alert('You are not registerd. Check your values')
+    }
+}
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="cost price" id="cost price">
+    <input type="text" placeholder="selling price" id="selling price">
+    <button onclick="myFunction()">CHECK</button>
+    <script>
+        function myFunction(){
+
+            var cost_price = document.getElementById('cost price').value;
+            var selling_price = document.getElementById('selling price').value;
+
+            var profit = selling_price - cost_price ;
+            var loss = cost_price - selling_price ;
+
+            if ( selling_price > cost_price ) {
+                alert('Congratulation you have earned a profit of Rs:' +profit);
+            }
+            else if ( selling_price < cost_price ) {
+                alert('You have earned a loss of Rs:' +loss);
+            }
+            else{
+                alert('Your cost price and selling price are equall')
+            }
+           
+        }
+    </script>
+</body>
+</html>

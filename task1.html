@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Enter the quantity" id="qty">
+    <input type="text" placeholder="Enter rate" id="rate">
+    <button onclick="myFunction()">Check</button>
+    
+    <script>
+        function myFunction(){
+        var qty = document.getElementById('qty').value;
+        var rate = document.getElementById('rate').value;
+        var dis = 10 ;
+        var tot = qty*rate - (qty*rate*dis)/100;
+
+        if(qty > 1000){
+            alert('Your price after 10% discount is '+tot);
+        }
+        else{
+            alert('Your price is ' +(qty*rate));
+        }
+
+    }
+    </script>
+
+</body>
+</html>
